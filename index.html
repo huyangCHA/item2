@@ -41,7 +41,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="wow fadeInRight" data-wow-delay="100ms" href="./index.html">Home</a></li>
                         <li><a class="wow fadeInRight" data-wow-delay="200ms" href="./about.html">About Us</a></li>
-                        <li><a class="wow fadeInRight" data-wow-delay="300ms" href="./services.html">Services</a></li>
+                        <li><a class="wow fadeInRight" data-wow-delay="300ms" href="#services">Services</a> </li>
                         <li><a class="wow fadeInRight" data-wow-delay="400ms" href="#work">Blog</a></li>
                         <li><a class="wow fadeInRight" data-wow-delay="500ms" href="#test">Contact</a></li>
                         <li><a class="wow fadeInRight 
@@ -272,4 +272,40 @@
 
 <script>
     new WOW().init()
+
+    	 // 滚动监听
+    // a href == id 
+    //锚点跳转滑动效果  
+    $('#bs-example-navbar-collapse-1 a[href],#banner a[href],#back a[href]').click(function() {  
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {  
+            var $target = $(this.hash);  
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');  
+            if ($target.length) {  
+                var targetOffset = $target.offset().top;  
+                $('html,body').animate({  
+                            scrollTop: targetOffset  
+                },1000);  
+                return false;  
+            }  
+        }  
+    });  
+
+    //给页面绑定一个滚动条事件
+    $(document).scroll(function(){
+        //获取滚动条滚动长度大小
+        var distance = $(this).scrollTop()
+
+        //当滚动条滚动的长度大于10
+        if(distance > 10)
+        {
+            //显示返回顶部
+            $("#gotop").css({zIndex:99998,opacity:1});
+            
+        }else
+        {
+            //隐藏返回顶部
+            $("#gotop").css({zIndex:-99998,opacity:0});
+           
+        }
+    })
 </script>
