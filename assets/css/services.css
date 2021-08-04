@@ -1,0 +1,225 @@
+.our-ser .container .title {
+  margin: 4em 0em;
+  text-align: center;
+}
+.our-ser .container .title h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #7e56ff;
+}
+.our-ser .container .title span {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.our-ser .container .list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5em;
+  flex-wrap: wrap;
+}
+.our-ser .container .list .item {
+  width: 30%;
+  margin-bottom: 1em;
+  padding: 2.5em;
+  transition: all linear 0.3s;
+  box-shadow: 0px 5px 30px rgba(126, 86, 255, 0.1);
+}
+.our-ser .container .list .item .right h1 {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.our-ser .container .list .item .right p {
+  margin-top: 1em;
+  color: #707070;
+}
+.our-ser .container .list .item .right p:hover {
+  color: #7e56ff;
+  cursor: pointer;
+}
+.our-ser .container .list .item .left img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .our-ser .container .list {
+    height: 40em;
+    flex-wrap: wrap;
+    transition: all linear 0.5s;
+    overflow-y: scroll;
+  }
+  .our-ser .container .list .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .our-ser .container .list .item .left {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .our-ser .container .list .item .right {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .our-ser .container .list .item {
+    width: 100%;
+  }
+  .our-ser .container .list .item .left {
+    display: none;
+  }
+}
+.team {
+  padding: 5em 0em 3em;
+}
+.team .subject {
+  text-align: center;
+  padding-bottom: 1.5em;
+  margin-bottom: 6em;
+}
+.team .subject .title {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.team .teamlist {
+  position: relative;
+  height: 40em;
+}
+.team .teamlist input {
+  display: none;
+}
+.team .teamlist input:checked + .list {
+  opacity: 1;
+  z-index: 1;
+}
+.team .teamlist #team1:checked ~ .morebox label[for="team1"],
+.team .teamlist #team2:checked ~ .morebox label[for="team2"],
+.team .teamlist #team3:checked ~ .morebox label[for="team3"] {
+  background-color: #7e56ff;
+}
+.team .teamlist .list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+}
+.team .teamlist .list .item {
+  width: 30%;
+  text-align: center;
+}
+.team .teamlist .list .item .thumb {
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  transition: all linear 0.3s;
+}
+.team .teamlist .list .item .thumb img {
+  width: 100%;
+}
+.team .teamlist .list .item .content .name {
+  font-size: 1.3em;
+}
+.team .teamlist .list .item .content .job {
+  display: inline-block;
+  font-family: OSLight;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.team .teamlist .list .item .content .info {
+  font-family: OSLight;
+}
+.team .teamlist .morebox {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: 6em;
+}
+.team .teamlist .morebox .more {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.team .teamlist .morebox .more label {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #000000;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  position: relative;
+}
+.team .teamlist .morebox .more label:hover {
+  background-color: #7e56ff;
+}
+@media screen and (max-width: 700px) {
+  .team .subject {
+    margin-bottom: 3em;
+  }
+  .team .teamlist {
+    height: 45em;
+  }
+  .team .teamlist .list {
+    flex-wrap: wrap;
+  }
+  .team .teamlist .list .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  .team .teamlist .list .item .thumb {
+    width: 20%;
+    border-radius: 3px;
+    margin-bottom: 0;
+    margin-right: 1em;
+    flex-shrink: 0;
+  }
+  .team .teamlist .list .item .content {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .team .teamlist .list .item .content * {
+    width: 100%;
+  }
+  .team .teamlist .list .item .content .job {
+    margin-bottom: 0;
+  }
+  .team .teamlist .morebox {
+    margin-bottom: 0em;
+  }
+  .team .teamlist .morebox .more {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .team .subject .title {
+    font-size: 1.5em;
+  }
+  .team .teamlist {
+    height: 35em;
+  }
+  .team .teamlist .list .item .thumb {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team .teamlist {
+    height: 35em;
+  }
+  .team .teamlist .morebox {
+    margin-bottom: -1em;
+  }
+  .team .teamlist .morebox .more {
+    width: 18%;
+  }
+}

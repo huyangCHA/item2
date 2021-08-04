@@ -1,0 +1,141 @@
+.header {
+  background-color: #7e56ff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  transition: all linear 0.4s;
+}
+.header .navbar {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0;
+}
+.header .navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar .navbar-header .navbar-brand {
+  width: 100%;
+}
+.header .navbar .navbar-header button span {
+  color: #fff;
+  font-weight: lighter;
+}
+.header .navbar .nav a {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: all linear 0.3s;
+}
+.footer {
+  background: #f9f9fb;
+}
+.footer .container {
+  padding-top: 10em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.footer .container .left {
+  width: 30%;
+}
+.footer .container .left img {
+  margin-bottom: 2em;
+}
+.footer .container .left h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.footer .container .left p {
+  color: #707070;
+  margin-bottom: 1.5em;
+}
+.footer .container .left .icon {
+  font-size: 1.5em;
+}
+.footer .container .left .icon ul li {
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  background: #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 0.5em;
+}
+.footer .container .left .icon ul li:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #707070;
+}
+.footer .container .right {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 2em;
+}
+.footer .container .right .item h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.footer .container .right .item ul {
+  color: #969494;
+}
+.footer .container .right .item ul li {
+  margin-bottom: 1em;
+}
+.footer .container .right .item ul li:hover {
+  cursor: pointer;
+  color: #7e56ff;
+}
+.footer .container .right .item ul li ul {
+  display: none;
+}
+.footer .btm p {
+  text-align: center;
+  color: #707070;
+}
+@media screen and (max-width: 700px) {
+  .footer .container .left h2 {
+    font-size: 1em;
+  }
+}
+#gotop {
+  position: fixed;
+  bottom: 90px;
+  right: 0%;
+  width: 80px;
+  cursor: pointer;
+  z-index: -99998;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+#gotop:hover {
+  animation: rubberBand 1s;
+}
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

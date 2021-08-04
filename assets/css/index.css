@@ -1,0 +1,346 @@
+.banner {
+  background: #7e56ff;
+  padding-top: 2em;
+}
+.banner .container .contant {
+  display: flex;
+  justify-content: space-between;
+}
+.banner .container .contant .left {
+  width: 40%;
+}
+.banner .container .contant .left .top {
+  color: #fff;
+  margin-bottom: 2em;
+}
+.banner .container .contant .left .top h6 {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+.banner .container .contant .left .top h1 {
+  font-weight: bold;
+  animation: 1s 0.5s fadeInLeft both;
+  font-size: 3em;
+}
+.banner .container .contant .left .top p {
+  hyphens: auto;
+}
+.banner .container .contant .left .btm {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+}
+.banner .container .contant .left .btm .ipt {
+  border: 0;
+  border-radius: 5px !important;
+  height: 50px;
+  width: 100%;
+  padding: 0px 160px 2px 20px;
+}
+.banner .container .contant .left .btm .btn {
+  color: #ffffff;
+  font-size: 14px;
+  height: 50px;
+  line-height: 40px;
+  background: #5c3ea3;
+  right: 5px;
+  top: 5px;
+  transition: all linear 0.3s;
+  z-index: 3;
+  border-radius: 5px !important;
+}
+.banner .container .contant .left .btm .btn:hover {
+  background: #3200d8;
+  transform: scale(1.2);
+}
+.banner .container .contant .right img {
+  transition: all linear 0.3s;
+  transform: scale(0.8);
+}
+.banner .container .contant .right img:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .banner .container .right {
+    flex-shrink: 0.4;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner .container {
+    display: block;
+    width: 70%;
+    text-align: center;
+  }
+  .banner .container .contant .left {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .banner .container .right img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner .container .contant .left {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .container .contant .left .top h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner .container .contant .left {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .container .contant .left .top h1 {
+    font-size: 1.5em;
+  }
+}
+.services {
+  background: #fff;
+}
+.services .subject .title {
+  margin: 5em auto;
+  text-align: center;
+}
+.services .subject .title span {
+  color: #7e56ff;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.services .subject .title h1 {
+  font-size: 2.5em;
+}
+.services .subject .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10em;
+}
+.services .subject .list .item {
+  width: 30%;
+  box-shadow: 0px 5px 30px #d6d6d6;
+  padding: 2em;
+}
+.services .subject .list .item img {
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+.services .subject .list .item img:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 30px #d7d7d7;
+}
+.services .subject .list .item h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.services .subject .list .item p {
+  color: #707070;
+  font-size: 1.4em;
+}
+@media screen and (max-width: 700px) {
+  .services .container {
+    margin-bottom: 20em;
+  }
+  .services .container .subject {
+    margin-bottom: 2em;
+  }
+  .services .container .subject .title {
+    font-size: 0.5em;
+  }
+  .services .container .subject .list {
+    height: 40em;
+    flex-wrap: wrap;
+  }
+  .services .container .subject .list .item {
+    width: 100%;
+    height: 20em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  .services .container .subject .list .item P {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .services .list .item {
+    height: 30em;
+    overflow-y: scroll;
+  }
+}
+.manage .container .title {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+.manage .container .title h1 {
+  font-size: 3em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+.manage .container .subject .top {
+  margin-bottom: 10em;
+  display: flex;
+  justify-content: space-between;
+}
+.manage .container .subject .top .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.manage .container .subject .top .left .btn {
+  margin: 0 auto;
+}
+.manage .container .subject .top .left .btn .btn-w .manage-btn {
+  width: 100%;
+  padding: 1em 3em;
+  background: #fff;
+  box-shadow: 0px 5px 10px #d6d6d6;
+  border: 1px solid #d6d6d6;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 0.5em;
+}
+.manage .container .subject .top .left .btn .btn-w .manage-btn img {
+  margin-right: 1em;
+}
+.manage .container .subject .top .left .btn .btn-w .contant {
+  display: none;
+}
+.manage .container .subject .top .right {
+  width: 50%;
+}
+.manage .container .subject .btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 2em;
+}
+.manage .container .subject .btm .left {
+  flex-shrink: 0.2;
+}
+.manage .container .subject .btm .left img {
+  margin-top: 4em;
+}
+.manage .container .subject .btm .right {
+  width: 45%;
+}
+.manage .container .subject .btm .right .info {
+  text-align: center;
+}
+.manage .container .subject .btm .right .top {
+  margin-bottom: 2.5em;
+}
+.manage .container .subject .btm .right .top .big {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.manage .container .subject .btm .right .info {
+  font-family: OSLight;
+  color: #636363;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.manage .container .subject .btm .right .list {
+  color: #636363;
+  margin-bottom: 1em;
+}
+.manage .container .subject .btm .right .list li {
+  text-indent: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.manage .container .subject .btm .right .more {
+  display: flex;
+  justify-content: left;
+  padding: 1em;
+  border: 1px solid #7e56ff;
+  border-radius: 3px;
+  width: 25%;
+  font-weight: bold;
+  overflow-x: hidden;
+  cursor: pointer;
+  margin-bottom: 3em;
+  transition: all linear 0.3s;
+  color: #7e56ff;
+  margin: 0 auto;
+}
+.manage .container .subject .btm .right .more:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px 0px #7e56ff;
+  background-color: #7e56ff;
+  color: #fff;
+}
+.manage .container .subject .btm .right .more .icon {
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+.manage .container .subject .btm .right .more .name {
+  margin: 0 auto;
+  font-size: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  margin-top: 1px;
+}
+@media screen and (max-width: 1000px) {
+  .manage .container .subject .top .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .manage .container .title {
+    margin-top: 5em;
+  }
+  .manage .container .title h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .manage .container .title .info {
+    margin: 0 auto;
+  }
+  .manage .container .subject .top {
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .manage .container .subject .top .left {
+    width: 100%;
+  }
+  .manage .container .subject .top .right {
+    display: none;
+  }
+  .manage .container .subject .btm .left img {
+    display: none;
+  }
+  .manage .container .subject .btm .right {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .manage .container .subject .btm .right .top .big {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .manage .container .subject .btm .more {
+    margin: 0 auto;
+  }
+  .manage .container .subject .btm .more .name {
+    text-align: left;
+  }
+}

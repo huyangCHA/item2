@@ -1,0 +1,125 @@
+.abt-banner {
+  background: linear-gradient(to right, #7776ff, #ae2cf1 100%);
+}
+.abt-banner .container .contant {
+  text-align: center;
+  color: #fff;
+  padding: 10em 0em;
+}
+.abt-banner .container .contant h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+.abt-banner .container .contant span {
+  font-size: 1em;
+}
+.abt-us {
+  padding: 0 5em;
+}
+.abt-us .container .contant {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 5em;
+}
+.abt-us .container .contant .right {
+  width: 35%;
+}
+.abt-us .container .contant .right .title span {
+  color: #7e56ff;
+  font-size: 2em;
+}
+.abt-us .container .contant .right h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+.abt-us .container .contant .right p {
+  color: #707070;
+}
+@media screen and (max-width: 1000px) {
+  .abt-us .container .contant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .abt-us .container .contant .left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .abt-us .container .contant .right {
+    width: 80%;
+    text-align: center;
+  }
+  .abt-us .container .contant .right p {
+    height: 12em;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width: 700px) {
+  .abt-us .container .contant .left {
+    display: none;
+  }
+  .abt-us .container .contant .right {
+    width: 100%;
+    text-align: center;
+  }
+  .abt-us .container .contant .right .title span {
+    font-size: 1.5em;
+  }
+  .abt-us .container .contant .right h1 {
+    font-size: 2em;
+  }
+}
+.compleated {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #7776ff, #ae2cf1 100%);
+}
+.compleated .container {
+  padding: 8em 0em;
+}
+.compleated .container h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+.compleated .container .item {
+  display: flex;
+  justify-content: space-between;
+}
+.compleated .container .item .info {
+  width: 20%;
+  text-align: center;
+}
+.compleated .container .item .info h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+.compleated .container .item .info span {
+  font-size: 2em;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  .compleated .container h1 {
+    font-size: 1.5em;
+  }
+  .compleated .container .item .info h2 {
+    font-size: 1.8em;
+  }
+  .compleated .container .item .info span {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .compleated .container h1 {
+    font-size: 1em;
+  }
+  .compleated .container .item .info h2 {
+    font-size: 1.5em;
+  }
+  .compleated .container .item .info span {
+    font-size: 0.5em;
+  }
+}

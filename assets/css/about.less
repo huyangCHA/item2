@@ -1,0 +1,154 @@
+.abt-banner{
+    background:  linear-gradient( to right, rgb(119,118,255) , rgb(174,44,241) 100%);
+    .container{
+        .contant{
+            text-align: center;
+            color: #fff;
+            padding: 10em 0em;
+            h1{
+                font-size: 3em;
+                font-weight: bold;
+            }
+            span{
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+.abt-us{
+    padding: 0 5em;
+    .container{
+        .contant{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 5em;
+            .left{
+              
+            }
+            .right{
+                width: 35%;
+                .title{
+                    span{
+                        color: #7e56ff;
+                        font-size: 2em;
+                    }
+                }
+                h1{
+                    font-size: 3em;
+                    font-weight: bold;
+                }
+                p{
+                    color: #707070;
+                }
+            }
+        }
+@media screen and (max-width:1000px) {
+    .contant{
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        .left{
+            width: 80%;
+            margin:  0 auto;
+        }
+        .right{
+            width: 80%;
+            text-align: center;
+            p{
+                height: 12em;
+                overflow-y: scroll;
+            }
+        }
+    }
+}
+
+        @media screen and (max-width:700px){
+            .contant{
+                .left{
+                    display: none;
+                }
+                .right{
+                    width: 100%;
+                    text-align: center;
+                   .title{
+                       span{
+                           font-size: 1.5em;
+                       }
+
+                   }
+                   h1{
+                       font-size: 2em;
+                   }
+                }
+            }
+            
+        }
+    }
+}
+.compleated{
+    height: 100%;
+    width: 100%;
+    
+    background:  linear-gradient( to right, rgb(119,118,255) , rgb(174,44,241) 100%);
+    .container{
+        padding: 8em 0em;
+        h1{
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 2em;
+        }
+        .item{
+            display: flex;
+            justify-content: space-between;
+            .info{
+                width: 20%;
+                text-align: center;
+                h2{
+                    font-size: 4em;
+                    font-weight: bold;
+                }
+                span{
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            h1{
+                font-size: 1.5em;
+            }
+            .item{
+                .info{
+                    h2{
+                        font-size: 1.8em;
+                    }
+                span{
+                    font-size: .8em;
+                }
+                }
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            h1{
+                font-size: 1em;
+            }
+            .item{
+                .info{
+                    h2{
+                        font-size: 1.5em;
+                    }
+                span{
+                    font-size: .5em;
+                }
+                }
+            }
+        }
+    }
+}
