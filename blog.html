@@ -16,6 +16,8 @@
         <link rel="stylesheet/less" href="./assets/css/blog.less">
 
         <link rel="stylesheet" href="./assets/css/reset.css">
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        
 </head>
 <body>
         <!-- 头部header -->
@@ -29,8 +31,7 @@
                         </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                       
-                       
+
                         </button>
                        
                     </div>
@@ -38,13 +39,32 @@
                     <!-- 导航元素 -->
                     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
+                             <!-- 按钮：用于打开模态框 -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: #7e56ff; margin-top: .8em; border: 0px;">
+    <a class="wow fadeInRight 
+    glyphicon glyphicon-search" data-wow-delay="600ms" href="#"></a>
+  </button>
+   
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          <div>
+              <input type="text" >
+              <a href="#" class="wow fadeInRight 
+              glyphicon glyphicon-search " data-wow-delay="600ms" style="color:#000">搜索</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
                             <li><a class="wow fadeInRight" data-wow-delay="100ms" href="./index.html">Home</a></li>
                             <li><a class="wow fadeInRight" data-wow-delay="200ms" href="./about.html">About Us</a></li>
                             <li><a class="wow fadeInRight" data-wow-delay="300ms" href="./services.html">Services</a> </li>
-                            <li><a class="wow fadeInRight" data-wow-delay="400ms" href="#work">Blog</a></li>
-                            <li><a class="wow fadeInRight" data-wow-delay="500ms" href="#test">Contact</a></li>
-                            <li><a class="wow fadeInRight 
-                                glyphicon glyphicon-search" data-wow-delay="600ms" href="#contact"></a></li>
+                            <li><a class="wow fadeInRight" data-wow-delay="400ms" href="./blog.html">Blog</a></li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -68,7 +88,7 @@
                         <h3>Top Saas landing page design 2021.</h3>
                         <p>There are many variations of passages of available in some form, by injected humour</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>
@@ -77,7 +97,7 @@
                         <h3>Softwere landing page design 2021.</h3>
                         <p>Softwere landing are many variations of passages of available in some form, by injected humour</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>
@@ -86,16 +106,16 @@
                         <h3>App landing page design 2021.</h3>
                         <p>App landing page are many variations of passages of available in some form.</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>
                     <div class="list col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="600ms">
-                        <img src="./assets/images/4.jpg">
+                        <img src="./assets/images/5.png">
                         <h3>App landing page design 2021.</h3>
                         <p>App landing page are many variations of passages of available in some form.</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>
@@ -104,16 +124,16 @@
                         <h3>App landing page design 2021.</h3>
                         <p>There are many variations of passages of available in some form, by injected humour</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>
                     <div class="list col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="800ms">
-                        <img src="./assets/images/6.jpg">
+                        <img src="./assets/images/6.png">
                         <h3>Agency business landing page design 2021.</h3>
                         <p>There are many business landing of passages of available in some form, by injected humour</p>
                         <div class="info">
-                            <div class="left">Read More</div>
+                            <div class="left"><a href="#">Read More</a></div>
                             <div class="right">05 Feb 2020</div>
                         </div>
                     </div>

@@ -22,6 +22,8 @@
 }
 .case .container .subject .list img {
   margin-bottom: 1em;
+  width: 8em;
+  height: 8em;
 }
 .case .container .subject .list h3 {
   font-size: 1em;
@@ -40,6 +42,10 @@
 .case .container .subject .list .info .left {
   color: #3f6de0;
   font-weight: 700;
+}
+.case .container .subject .list .info .left a:hover {
+  cursor: pointer;
+  color: #7e56ff;
 }
 .case .container .subject .list .info .right {
   color: #707070;

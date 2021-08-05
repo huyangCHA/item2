@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet/less" href="./assets/css/about.less">
         <link rel="stylesheet/less" href="./assets/css/services.less">
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 </head>
 <body>
     <header class="header"  id="header">
@@ -39,11 +40,32 @@
                 <!-- 导航元素 -->
                 <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                           <!-- 按钮：用于打开模态框 -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: #7e56ff; margin-top: .8em; border: 0px;">
+    <a class="wow fadeInRight 
+    glyphicon glyphicon-search" data-wow-delay="600ms" href="#"></a>
+  </button>
+   
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          <div>
+              <input type="text" >
+              <a href="#" class="wow fadeInRight 
+              glyphicon glyphicon-search " data-wow-delay="600ms" style="color:#000">搜索</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
                         <li><a class="wow fadeInRight" data-wow-delay="100ms" href="./index.html">Home</a></li>
                         <li><a class="wow fadeInRight" data-wow-delay="200ms" href="./about.html">About Us</a></li>
                         <li><a class="wow fadeInRight" data-wow-delay="300ms" href="./services.html">Services</a> </li>
                         <li><a class="wow fadeInRight" data-wow-delay="400ms" href="./blog.html">Blog</a></li>
-                        <li><a class="wow fadeInRight" data-wow-delay="500ms" href="#test">Contact</a></li>
+                        
                         <li><a class="wow fadeInRight 
                             glyphicon glyphicon-search" data-wow-delay="600ms" href="#contact"></a></li>
                     </ul>
